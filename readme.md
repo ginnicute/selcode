@@ -32,15 +32,15 @@ user@hostname:~$ selcode -h
 ### Method 1: Install from source
 
 1. Clone repository:
-    ```bash
+    ```shell
     git clone https://github.com/yourusername/selcode.git && cd selcode
     ```
 2. Grant execute permissions to the file:
-    ```bash
+    ```shell
     chmod +x selcode.py
     ```
 3. Place the file in a directory accessible from PATH:
-    ```bash
+    ```shell
     # install for all users:
     sudo cp selcode.py /usr/local/bin/selcode
 
@@ -49,20 +49,27 @@ user@hostname:~$ selcode -h
     cp selcode.py ~/.local/bin/selcode
     ```
 4. Add ~/.local/bin in PATH
-    ```bash
+    ```shell
     echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
     ```
 
 
 ### Method 2: Install from Makefile(Recommend)
 1. Clone:
-    ```bash
+    ```shell
     git clone https://github.com/ginnicute/selcode && cd selcode
     ```
 2. Install:
-    ```bash
+    ```shell
     sudo make install
     ```
+---
+
+## Uninstall
+```shell
+make uninstall selcode
+```
+
 ---
 
 <p align="center">
